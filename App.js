@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 import Home from './src/screens/Home';
+import Navigator from './src/navigation/index';
 
 
 const getFonts = () => Font.loadAsync({
@@ -13,9 +14,9 @@ const getFonts = () => Font.loadAsync({
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
   if (fontLoaded) {
-     return (
-    <Home />
-  );
+    return (
+      <Navigator />
+    );
   } else {
     return (
       <AppLoading
