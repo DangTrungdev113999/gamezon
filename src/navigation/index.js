@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import HomeStack from "./HomeStack/index";
+import HomeDrawer from "./HomeStack/index";
 import UserStack from "./UserStack";
 import SettingStack from "./SettingStack";
 import NotificationStack from "./NotificationStack";
@@ -15,7 +15,7 @@ const { Navigator, Screen } = createBottomTabNavigator();
 const SCREENS = [
   {
     name: "Home",
-    component: HomeStack,
+    component: HomeDrawer,
   },
   {
     name: "User",

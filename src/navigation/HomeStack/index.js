@@ -1,4 +1,5 @@
 import React from "react";
+import { Platform  } from 'react-native';
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
@@ -16,6 +17,8 @@ const SCREENS = [
     component: HomeStack,
     options: ({ route }) => ({
       title: "Home",
+      headerTitleAlign: 'center',
+      headerMode: 'none',
     }),
   },
   {
