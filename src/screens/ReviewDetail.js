@@ -1,5 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
+
+import Card from '../components/Card';
+
 import { globalStyles } from "../styles/global";
 
 function ReviewDetail({ navigation, route }) {
@@ -15,9 +18,12 @@ function ReviewDetail({ navigation, route }) {
       <Button title="Go to Home" onPress={() => navigation.navigate("home")} />
       <Button title="Go back" onPress={() => navigation.goBack()} />
 
-      <Text>{item.title}</Text>
-      <Text>{item.body}</Text>
-      <Text>{item.rate}</Text>
+      <Card>
+        <Text>{item.title}</Text>
+        <Text>{item.body}</Text>
+        <Text>{item.rate}</Text>
+      </Card>
+
     </View>
   );
 }

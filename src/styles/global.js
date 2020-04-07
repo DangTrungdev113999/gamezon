@@ -4,12 +4,13 @@ export const globalStyles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
-        justifyContent: 'center',
-        alignItems: 'center',
+        // justifyContent: 'center',
+        // alignItems: 'center',
     },
     titleText: {
         fontFamily: 'nunito-regular',
         fontSize: 18,
+        padding: 20,
         color: '#333'
     },
     paragraph: {
