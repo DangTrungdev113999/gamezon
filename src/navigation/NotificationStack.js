@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import Notification from "../screens/Notification";
+import Notification from "../screens/Notification/index";
 
 import { headerOption } from "./navigationOption";
 
@@ -12,7 +12,8 @@ const SCREENS = [
     name: "notification",
     component: Notification,
     options: ({ route }) => ({
-      title: route.params?.title || "User profile",
+      /* title: route.params?.title || "User profile", */
+      headerShown: false,
     }),
   },
 ];

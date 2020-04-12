@@ -20,8 +20,6 @@ function MucsicPlayer() {
 
   const changeTime = (seconds) => {
     setIimeElapsed(Moment.utc(seconds * 1000).format("m:ss"));
-
-    console.log(timeElapsed);
     setTimeRemainging(
       Moment.utc((timeElapsed - seconds) * 1000).format("m:ss")
     );

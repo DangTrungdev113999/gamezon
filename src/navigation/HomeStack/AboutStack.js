@@ -23,6 +23,7 @@ function AboutStack() {
     <Navigator screenOptions={headerOption}>
       {SCREENS.map((screen) => (
         <Screen
+          key={screen.name}
           name={screen.name}
           component={screen.component}
           options={screen.options}
