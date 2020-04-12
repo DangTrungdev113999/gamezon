@@ -5,7 +5,6 @@ import { AppLoading } from 'expo';
 import Home from './src/screens/Home';
 import Navigator from './src/navigation/index';
 
-
 const getFonts = () => Font.loadAsync({
   'nunito-regular': require('./assets/fonts/Nunito-Regular.ttf'),
   'nunito-bold': require('./assets/fonts/Nunito-Bold.ttf'),

@@ -8,7 +8,7 @@ import UserStack from "./UserStack";
 import SettingStack from "./SettingStack";
 import NotificationStack from "./NotificationStack";
 
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from "@expo/vector-icons";
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -35,24 +35,29 @@ function StackNavigator() {
   return (
     <NavigationContainer>
       <Navigator
+        initialRouteName="User"
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
-            if (route.name === 'Home') {
-              iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline';
-            } else if (route.name === 'User') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
-            } else if (route.name === 'Setting') {
-              iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline';
-            } else if (route.name === 'Notification') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+            if (route.name === "Home") {
+              iconName = focused
+                ? "ios-information-circle"
+                : "ios-information-circle-outline";
+            } else if (route.name === "User") {
+              iconName = focused ? "ios-list-box" : "ios-list";
+            } else if (route.name === "Setting") {
+              iconName = focused
+                ? "ios-information-circle"
+                : "ios-information-circle-outline";
+            } else if (route.name === "Notification") {
+              iconName = focused ? "ios-list-box" : "ios-list";
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
         })}
         tabBarOptions={{
-          activeTintColor: 'tomato',
-          inactiveTintColor: 'gray',
+          activeTintColor: "tomato",
+          inactiveTintColor: "gray",
         }}
       >
         {SCREENS.map((screen) => (

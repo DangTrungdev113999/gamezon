@@ -11,7 +11,7 @@ function ReviewDetail({ navigation, route }) {
     <View style={globalStyles.container}>
 
       <Button title="Go to Home" onPress={() => navigation.navigate("home")} />
-      <Button title="Go back" onPress={() => navigation.goBack()} />
+ {/*      <Button title="Go back" onPress={() => navigation.goBack()} /> */}
 
       <Card>
         <Text>{item.title}</Text>
