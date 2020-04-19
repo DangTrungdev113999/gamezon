@@ -35,7 +35,7 @@ function StackNavigator() {
   return (
     <NavigationContainer>
       <Navigator
-        initialRouteName="Notification"
+        initialRouteName="Setting"
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;

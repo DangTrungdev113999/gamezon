@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import Setting from "../screens/Setting";
+import Setting from "../screens/Setting/index";
 
 import { headerOption } from "./navigationOption";
 
@@ -12,7 +12,7 @@ const SCREENS = [
     name: "setting",
     component: Setting,
     options: ({ route }) => ({
-      title: route.params?.title || "Setting",
+      headerShown: false,
     }),
   },
 ];
